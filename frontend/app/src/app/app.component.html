@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record</title>
+</head>
+<body>
+     <div>
+      <label for="firstname">firstname</label>
+      <input type="text" id="firstname" #fn/> <br> <br>
+      <label for="lastname" >lastname</label>
+      <input type="text" id="lastname" #ln/> <br> <br>
+      <label for="mailId">mailId</label>
+      <input type="text" id="mailId" #md/> <br> <br>
+      <label for="phoneNo">phoneNo</label>
+      <input type="text" id="phoneNo" #pno/> <br> <br>
+      <label for="data of birth">data of birth</label>
+      <input type="text" id="data of birth" #dob/><br> <br>
+      <label for="gender">gender</label>
+      <input type="textarea" id="gender" #gndr/><br> <br>
+      <label for="addressl1" >address line 1</label>
+      <input type="text" id="addressl1" #al1/><br> <br>
+      <label for="addressl2">address line 2</label>
+      <input type="textarea" id="addressl2" #al2/><br> <br>
+      <label for="city">city</label>
+      <input type="text" id="city" #cty/><br> <br>
+      <label for="state">state/province</label>
+      <input type="text" id="state" #state/><br> <br>
+      <label for="postalcode">postal code</label>
+      <input type="text" id="postalcode" #pc/><br> <br>
+      <label for="country">country</label>
+      <input type="text" id="country" #cntry/><br><br>
+      <button type="submit" (click)="postResponse(fn.value,ln.value,md.value,pno.value,dob.value,gndr.value,al1.value,al2.value,cty.value,state.value,pc.value,cntry.value)">submit</button>
+     </div>
+</body>
+</html>
